@@ -21,7 +21,7 @@ app.get("/free-tier", (req, res) => {
       const result = JSON.parse(stdout);
       res.json(result);
     } catch (parseError) {
-      res.status(500).json({ error: "Failed to parse AWS CLI output" });
+      res.status(500).json({ error: "Failed to parse AWS CLI output!!" });
     }
   });
 });
